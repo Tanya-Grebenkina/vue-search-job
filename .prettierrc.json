@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/prettierrc",
+  "semi": true,
+  "tabWidth": 2,
+  "singleQuote": true,
+  "printWidth": 80,
+  "trailingComma": "all",
+  "singleAttributePerLine": true,
+  "htmlWhitespaceSensitivity": "strict",
+    "plugins": ["prettier-plugin-tailwindcss"],
+    "tailwindCSS": {
+      "config": "./tailwind.config.js"
+    },
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "htmlWhitespaceSensitivity": "ignore"
+      }
+    },
+    {
+      "files": "*.css",
+      "options": {
+        "singleQuote": false,
+        "trailingComma": "all",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false
+      }
+    }
+  ]
+}
