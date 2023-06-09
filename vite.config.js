@@ -16,4 +16,7 @@ export default defineConfig({
     globals: true,
     setupFiles: ['./tests/setup.ts'],
   },
+  build: {
+    assetsInclude: ['/public/db.json'],
+  },
 });
